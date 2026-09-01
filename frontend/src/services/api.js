@@ -1,14 +1,16 @@
 import axios from 'axios';
 
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://vqa1-project.onrender.com/api';
+
 const API = axios.create({
-  baseURL: '/api',
+  baseURL: BASE_URL,
   headers: {
     'Content-Type': 'application/json'
   }
 });
 
 export const uploadDiagramApi = async (formData) => {
-  const response = await axios.post('/api/upload', formData, {
+  const response = await axios.post(`${BASE_URL}/upload`, formData, {
     headers: { 'Content-Type': 'multipart/form-data' }
   });
   return response.data;
@@ -45,7 +47,7 @@ export const askVqaApi = async (sessionId, question) => {
 };
 
 export const getReportUrl = (sessionId) => {
-  return `/api/report/${sessionId}`;
+  return `${BASE_URL}/report/${sessionId}`;
 };
 
 export default API;
