@@ -28,7 +28,6 @@ const SummaryPage = ({ pipelineData }) => {
   return (
     <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} style={{ maxWidth: '1000px', margin: '0 auto' }}>
       <div style={{ marginBottom: '28px' }}>
-        <div className="badge badge-medium" style={{ marginBottom: '8px' }}>STAGE 3 OF 8</div>
         <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#FFF' }}>
           Diagram Analysis <span className="gradient-text">Summary</span>
         </h2>

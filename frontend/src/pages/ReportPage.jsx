@@ -13,7 +13,6 @@ const ReportPage = ({ activeSession, pipelineData }) => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ maxWidth: '960px', margin: '0 auto' }}>
       <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-        <div className="badge badge-medium" style={{ marginBottom: '8px' }}>STAGE 8 OF 8 — FINAL STAGE</div>
         <h2 style={{ fontSize: '2.2rem', fontWeight: 800, color: '#FFF', marginBottom: '8px' }}>
           Diagnostic <span className="gradient-text">PDF Report Generator</span>
         </h2>
@@ -66,12 +65,6 @@ const ReportPage = ({ activeSession, pipelineData }) => {
           <FiDownload size={22} />
           <span>Download PDF Diagnostic Report</span>
         </a>
-
-        <div style={{ marginTop: '24px', fontSize: '0.8rem', color: 'var(--text-dim)', display: 'flex', justifyContent: 'center', gap: '20px' }}>
-          <span>✓ Formatted by ReportLab Engine</span>
-          <span>✓ B.Tech Capstone Ready</span>
-          <span>✓ IEEE Citation Format</span>
-        </div>
       </div>
     </motion.div>
   );

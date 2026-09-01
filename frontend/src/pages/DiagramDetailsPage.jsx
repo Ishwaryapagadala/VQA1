@@ -17,7 +17,6 @@ const DiagramDetailsPage = ({ pipelineData }) => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ maxWidth: '1100px', margin: '0 auto' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
         <div>
-          <div className="badge badge-medium" style={{ marginBottom: '8px' }}>STAGE 4 OF 8</div>
           <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#FFF' }}>
             Diagram Inspector & <span className="gradient-text">Graph Details</span>
           </h2>

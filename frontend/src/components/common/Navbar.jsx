@@ -49,7 +49,7 @@ const Navbar = ({ activeSession }) => {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255, 255, 255, 0.05)', padding: '6px 12px', borderRadius: '20px', border: '1px solid var(--border-glass)' }}>
           <FiShield color="#8B5CF6" />
-          <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>Senior AI Architect Mode</span>
+          <span style={{ fontSize: '0.85rem', fontWeight: 600 }}>User Name</span>
         </div>
 
         <div style={{

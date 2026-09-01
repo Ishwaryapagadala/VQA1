@@ -16,11 +16,11 @@ const Sidebar = ({ activeSession }) => {
   const navItems = [
     { path: '/login', label: 'Auth Portal', icon: IconLogin },
     { path: '/upload', label: 'Upload Diagram', icon: IconUpload },
-    { path: '/dashboard', label: 'Pipeline Dashboard', icon: IconGrid },
     { path: '/summary', label: 'Analysis Summary', icon: IconSummary },
     { path: '/details', label: 'Diagram Inspector', icon: IconDetails },
     { path: '/reasoning', label: 'AI Anomaly Reasoning', icon: IconReasoning },
     { path: '/healing', label: 'Self-Healing Engine', icon: IconHealing },
+    { path: '/dashboard', label: 'Diagram Analysis Workflow', icon: IconGrid },
     { path: '/vqa', label: 'Visual Q&A', icon: IconVQA },
     { path: '/report', label: 'PDF Report Center', icon: IconReport }
   ];
@@ -42,9 +42,6 @@ const Sidebar = ({ activeSession }) => {
       zIndex: 90
     }}>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-        <div style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--text-dim)', letterSpacing: '0.08em', paddingLeft: '12px', marginBottom: '8px' }}>
-          NAVIGATION PIPELINE
-        </div>
         {navItems.map((item) => {
           const Icon = item.icon;
           return (
@@ -72,13 +69,6 @@ const Sidebar = ({ activeSession }) => {
             </NavLink>
           );
         })}
-      </div>
-
-      <div className="glass-card" style={{ padding: '16px', borderRadius: '12px', background: 'rgba(139, 92, 246, 0.08)', border: '1px solid rgba(139, 92, 246, 0.2)' }}>
-        <h4 style={{ fontSize: '0.85rem', color: '#FFF', marginBottom: '4px' }}>B.Tech Final Project</h4>
-        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', lineHeight: '1.4' }}>
-          Error-Aware VQA with Anomaly Reasoning & Self-Healing.
-        </p>
       </div>
     </aside>
   );

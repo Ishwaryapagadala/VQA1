@@ -43,7 +43,6 @@ const VQAPage = ({ activeSession }) => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ maxWidth: '960px', margin: '0 auto' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
         <div>
-          <div className="badge badge-medium" style={{ marginBottom: '8px' }}>STAGE 7 OF 8</div>
           <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#FFF' }}>
             Visual Question <span className="gradient-text">Answering (VQA)</span>
           </h2>

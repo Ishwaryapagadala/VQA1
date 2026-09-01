@@ -89,7 +89,7 @@ const Dropzone = ({ onFileUpload, isLoading }) => {
             {isLoading ? 'Analyzing Technical Diagram...' : 'Drag & Drop Technical Diagram'}
           </h3>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-            Supports PNG, JPG, JPEG, WEBP or BMP up to 10MB
+            PNG, JPG, JPEG, WEBP or BMP up to 10MB
           </p>
         </div>
 
@@ -97,13 +97,6 @@ const Dropzone = ({ onFileUpload, isLoading }) => {
           <FiFile size={18} />
           <span>Browse File from Device</span>
         </button>
-
-        <div style={{ display: 'flex', gap: '16px', marginTop: '12px', fontSize: '0.8rem', color: 'var(--text-dim)' }}>
-          <span>✓ Symbol Detection</span>
-          <span>✓ OCR Extraction</span>
-          <span>✓ NetworkX Graph</span>
-          <span>✓ Self-Healing Engine</span>
-        </div>
       </div>
     </motion.div>
   );

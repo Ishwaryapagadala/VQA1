@@ -39,15 +39,15 @@ const DashboardPage = ({ pipelineData }) => {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '28px' }}>
         <div>
           <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#FFF' }}>
-            AI Pipeline <span className="gradient-text">Execution Dashboard</span>
+            Diagram Analysis <span className="gradient-text">Workflow</span>
           </h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.92rem' }}>
             Real-time stage-by-stage progression of diagram analysis & healing.
           </p>
         </div>
 
-        <button className="btn-primary" onClick={() => navigate('/summary')}>
-          <span>View Analysis Summary</span>
+        <button className="btn-primary" onClick={() => navigate('/vqa')}>
+          <span>Proceed to Visual Q&A</span>
           <FiArrowRight />
         </button>
       </div>

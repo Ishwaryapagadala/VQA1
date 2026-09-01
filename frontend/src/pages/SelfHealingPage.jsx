@@ -21,7 +21,6 @@ const SelfHealingPage = ({ pipelineData, activeSession }) => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ maxWidth: '1100px', margin: '0 auto' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
         <div>
-          <div className="badge badge-medium" style={{ marginBottom: '8px' }}>STAGE 6 OF 8</div>
           <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#FFF' }}>
             Self-Healing <span className="gradient-text">Engine</span>
           </h2>
@@ -30,8 +29,8 @@ const SelfHealingPage = ({ pipelineData, activeSession }) => {
           </p>
         </div>
 
-        <button className="btn-primary" onClick={() => navigate('/vqa')}>
-          <span>Proceed to Visual Q&A</span>
+        <button className="btn-primary" onClick={() => navigate('/dashboard')}>
+          <span>Proceed to Workflow</span>
           <FiArrowRight />
         </button>
       </div>

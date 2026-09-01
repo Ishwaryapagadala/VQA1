@@ -52,7 +52,7 @@ const LoginPage = () => {
             <FiCpu size={32} color="#FFF" />
           </div>
           <h2 style={{ fontSize: '1.75rem', fontWeight: 800, color: '#FFF', marginBottom: '6px' }}>
-            AI Diagram Portal Login
+            CREATE AN ACCOUNT
           </h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem' }}>
             Error-Aware Visual Question Answering & Anomaly Self-Healing
@@ -62,7 +62,7 @@ const LoginPage = () => {
         <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <div>
             <label style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-muted)', display: 'block', marginBottom: '8px' }}>
-              SENIOR ARCHITECT EMAIL
+              EMAIL
             </label>
             <div style={{ position: 'relative' }}>
               <FiMail style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-dim)' }} />
@@ -103,15 +103,10 @@ const LoginPage = () => {
           </div>
 
           <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center', padding: '14px', marginTop: '10px' }}>
-            <span>Access AI Platform Workspace</span>
+            <span>LOGIN</span>
             <FiArrowRight size={18} />
           </button>
         </form>
-
-        <div style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid var(--border-glass)', display: 'flex', justifyContent: 'center', gap: '16px', fontSize: '0.78rem', color: 'var(--text-dim)' }}>
-          <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}><FiShield color="#10B981" /> Production Ready</span>
-          <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}><FiCheckCircle color="#8B5CF6" /> B.Tech Project</span>
-        </div>
       </motion.div>
     </div>
   );
